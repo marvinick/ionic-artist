@@ -26,7 +26,8 @@
     <ion-pane  ng-controller="ListsCtrl"> 
       <ion-header-bar class="bar-dark">
         <h1 class="title">Artist List</h1>
-        <button class="button button-icon ion-navicon" ng-click="data.showReorder = !data.showReorder"></button>
+         <button class="button button-icon ion-minus-circled" ng-click="data.showDelete = !data.showDelete; data.showReorder = false;"></button>
+        <button class="button button-icon ion-navicon" ng-click="data.showReorder = !data.showReorder; data.showDelete = false;"></button>
       </ion-header-bar>
       <div class="bar bar-subheader item-input-inset bar-light">
         <label class="item-input-wrapper">
@@ -35,12 +36,13 @@
         </label>
       </div>
       <ion-content class="has-subheader">
-        <ion-list show-reorder="data.showReorder">
+        <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
           <ion-item ng-repeat="item in artists | filter: query" class="item-thumbnail-left item">
             <img src="http://placehold.it/100x100" alt="Photo">
             <h2>{{item.name}}</h2>
             <h3>{{item.reknown}}</h3>
             <p>{{item.bio | limitTo: 150}} {{item.bio > 150 ? '...' : ''}}</p>
+            <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(item)"></ion-delete-button>
             <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
           </ion-item>
         </ion-list>
