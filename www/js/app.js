@@ -23,6 +23,25 @@ angular.module('starter', ['ionic'])
   });
 })
 
+.config(function($stateProvider, $urlRouterProvider) {
+  $stateProvider
+    .state('tabs', {
+      url: '/tab',
+      abstract: true, 
+      templateUrl: 'templates/tabs.html'
+    })
+    .state('tabs.list', {
+      url: '/list',
+      views: {
+        'list-tab' : {
+          templateUrl: 'templates/list.html',
+          controller: 'ListsCtrl'
+        }
+      }
+    })
+    $urlRouterProvider.otherwise('/tab/list');
+})
+
 .controller('ListsCtrl', ['$scope', '$http', function($scope, $http) {
   $http.get('js/data.json').success(function(data) {
     $scope.artists = data.artists;
