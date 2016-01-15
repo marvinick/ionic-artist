@@ -30,6 +30,13 @@ angular.module('starter', ['ionic'])
       $scope.artists.splice($scope.artists.indexOf(item), 1);
     }
 
+    $scope.doRefresh = function() {
+      $http.get('js/data.json').success(function(data) {
+        $scope.artists = data.artists;
+        $scope.$broadcast('scroll.refreshComplete');
+      });
+    }
+
     $scope.toggleStar = function(item) {
       item.star = !item.star;
     }
