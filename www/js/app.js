@@ -19,7 +19,7 @@ angular.module('starter', ['ionic'])
     }
     if(window.StatusBar) {
       StatusBar.styleDefault();
-    }
+    } 
   });
 })
 
@@ -49,12 +49,25 @@ angular.module('starter', ['ionic'])
         }
       }
     })
+
+    .state('tabs.detail', {
+      url: '/list/:aId',
+      views: {
+        'list-tab' : {
+          templateUrl: 'templates/detail.html',
+          controller: 'ListsCtrl'
+        }
+      }
+    })
+
     $urlRouterProvider.otherwise('/tab/home');
 })
 
-.controller('ListsCtrl', ['$scope', '$http', function($scope, $http) {
+.controller('ListsCtrl', ['$scope', '$http', '$state', function($scope, $http, $state) {
   $http.get('js/data.json').success(function(data) {
     $scope.artists = data.artists;
+    $scope.whichartist = $state.params.aId;
+
     $scope.onItemDelete = function(item) {
       $scope.artists.splice($scope.artists.indexOf(item), 1);
     }
