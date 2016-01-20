@@ -50,6 +50,16 @@ angular.module('starter', ['ionic'])
       }
     })
 
+    .state('tabs.calendar', {
+      url: '/calendar',
+      views: {
+        'calendar-tab' : {
+          templateUrl: 'templates/calendar.html',
+          controller: 'CalendarCtrl'
+        }
+      }
+    })
+
     .state('tabs.detail', {
       url: '/list/:aId',
       views: {
@@ -62,6 +72,27 @@ angular.module('starter', ['ionic'])
 
     $urlRouterProvider.otherwise('/tab/home');
 })
+
+.controller('CalendarCtrl', ['$scope', '$http', '$state', function($scope, $http, $state) {
+  $http.get('js/data.json').success(function(data) {
+    $scope.calendar = data.calendar;
+
+    $scope.onItemDelete = function(dayIndex, item) {
+      $scope.calendar[dayIndex].schedule.splice($scope.calendar[day].schedule.indexOf(item), 1);
+    }
+
+    $scope.doRefresh = function() {
+      $http.get('js/data.json').success(function(data) {
+        $scope.calendar = data.calendar;
+        $scope.$broadcast('scroll.refreshComplete');
+      });
+    }
+
+    $scope.toggleStar = function(item) {
+      item.star = !item.star;
+    }
+  })
+}])
 
 .controller('ListsCtrl', ['$scope', '$http', '$state', function($scope, $http, $state) {
   $http.get('js/data.json').success(function(data) {
