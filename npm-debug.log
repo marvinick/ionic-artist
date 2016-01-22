@@ -1,0 +1,431 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova',
+1 verbose cli   'ionic' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'cordova', null ]
+7 verbose cache add spec cordova
+8 silly cache add args [ 'ionic', null ]
+9 verbose cache add spec ionic
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'cordova',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'cordova',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed cordova@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for cordova
+13 info addNameTag [ 'cordova', 'latest' ]
+14 silly mapToRegistry name cordova
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/cordova
+18 verbose addNameTag registry:https://registry.npmjs.org/cordova not in flight; fetching
+19 silly cache add parsed spec Result {
+19 silly cache add   raw: 'ionic',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'ionic',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: 'latest',
+19 silly cache add   type: 'tag' }
+20 silly addNamed ionic@latest
+21 verbose addNamed "latest" is being treated as a dist-tag for ionic
+22 info addNameTag [ 'ionic', 'latest' ]
+23 silly mapToRegistry name ionic
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/ionic
+27 verbose addNameTag registry:https://registry.npmjs.org/ionic not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/cordova
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 8:05:09 AM
+31 verbose request id 3de117873ac19583
+32 http request GET https://registry.npmjs.org/cordova
+33 verbose request uri https://registry.npmjs.org/ionic
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 8:05:09 AM
+36 http request GET https://registry.npmjs.org/ionic
+37 http 200 https://registry.npmjs.org/cordova
+38 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+38 verbose headers   etag: '"6KQ69KRX02Y8MUJFT56H9DE6N"',
+38 verbose headers   'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=300',
+38 verbose headers   'content-length': '372038',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   date: 'Fri, 22 Jan 2016 16:05:10 GMT',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   age: '72',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'x-served-by': 'cache-lax1423-LAX',
+38 verbose headers   'x-cache': 'HIT',
+38 verbose headers   'x-cache-hits': '16',
+38 verbose headers   'x-timer': 'S1453478710.486007,VS0,VE0',
+38 verbose headers   vary: 'Accept' }
+39 silly get cb [ 200,
+39 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 silly get     etag: '"6KQ69KRX02Y8MUJFT56H9DE6N"',
+39 silly get     'content-type': 'application/json',
+39 silly get     'cache-control': 'max-age=300',
+39 silly get     'content-length': '372038',
+39 silly get     'accept-ranges': 'bytes',
+39 silly get     date: 'Fri, 22 Jan 2016 16:05:10 GMT',
+39 silly get     via: '1.1 varnish',
+39 silly get     age: '72',
+39 silly get     connection: 'keep-alive',
+39 silly get     'x-served-by': 'cache-lax1423-LAX',
+39 silly get     'x-cache': 'HIT',
+39 silly get     'x-cache-hits': '16',
+39 silly get     'x-timer': 'S1453478710.486007,VS0,VE0',
+39 silly get     vary: 'Accept' } ]
+40 verbose get saving cordova to /Users/daddy/.npm/registry.npmjs.org/cordova/.cache.json
+41 verbose makeDirectory /Users/daddy/.npm creation not in flight; initializing
+42 silly makeDirectory /Users/daddy/.npm uid: 501 gid: 20
+43 silly addNameTag next cb for cordova with tag latest
+44 silly addNamed cordova@5.4.1
+45 verbose addNamed "5.4.1" is a plain semver version for cordova
+46 silly mapToRegistry name cordova
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry uri https://registry.npmjs.org/cordova
+50 verbose addRemoteTarball https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz',
+51 verbose addRemoteTarball   'bc56bc1d3c5387a7926408212dfbce59002f9d76' ]
+52 info retry fetch attempt 1 at 8:05:13 AM
+53 info attempt registry request try #1 at 8:05:13 AM
+54 http fetch GET https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz
+55 http fetch 200 https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz
+56 silly fetchAndShaCheck shasum bc56bc1d3c5387a7926408212dfbce59002f9d76
+57 verbose addTmpTarball /var/folders/mh/pg_hwt7n05q1tczybg2bn_d40000gn/T/npm-2267-36f6d4f0/registry.npmjs.org/cordova/-/cordova-5.4.1.tgz not in flight; adding
+58 verbose addTmpTarball already have metadata; skipping unpack for cordova@5.4.1
+59 silly cache afterAdd cordova@5.4.1
+60 verbose afterAdd /Users/daddy/.npm/cordova/5.4.1/package/package.json not in flight; writing
+61 verbose afterAdd /Users/daddy/.npm/cordova/5.4.1/package/package.json written
+62 http 200 https://registry.npmjs.org/ionic
+63 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+63 verbose headers   etag: '"6PII78BB43TSAD8WRLFUS00I2"',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   'content-length': '664494',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Fri, 22 Jan 2016 16:05:10 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '0',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-lax1430-LAX',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1453478710.487900,VS0,VE77',
+63 verbose headers   vary: 'Accept' }
+64 silly get cb [ 200,
+64 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 silly get     etag: '"6PII78BB43TSAD8WRLFUS00I2"',
+64 silly get     'content-type': 'application/json',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     'content-length': '664494',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Fri, 22 Jan 2016 16:05:10 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-lax1430-LAX',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1453478710.487900,VS0,VE77',
+64 silly get     vary: 'Accept' } ]
+65 verbose get saving ionic to /Users/daddy/.npm/registry.npmjs.org/ionic/.cache.json
+66 silly addNameTag next cb for ionic with tag latest
+67 silly addNamed ionic@1.7.13
+68 verbose addNamed "1.7.13" is a plain semver version for ionic
+69 silly mapToRegistry name ionic
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/ionic
+73 verbose addRemoteTarball https://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz not in flight; adding
+74 verbose addRemoteTarball [ 'https://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz',
+74 verbose addRemoteTarball   '0a16c0aea3280acd406938d31165fc0f2d258e06' ]
+75 info retry fetch attempt 1 at 8:05:16 AM
+76 info attempt registry request try #1 at 8:05:16 AM
+77 http fetch GET https://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz
+78 http fetch 200 https://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz
+79 silly fetchAndShaCheck shasum 0a16c0aea3280acd406938d31165fc0f2d258e06
+80 verbose addTmpTarball /var/folders/mh/pg_hwt7n05q1tczybg2bn_d40000gn/T/npm-2267-36f6d4f0/registry.npmjs.org/ionic/-/ionic-1.7.13.tgz not in flight; adding
+81 verbose addTmpTarball already have metadata; skipping unpack for ionic@1.7.13
+82 silly cache afterAdd ionic@1.7.13
+83 verbose afterAdd /Users/daddy/.npm/ionic/1.7.13/package/package.json not in flight; writing
+84 verbose afterAdd /Users/daddy/.npm/ionic/1.7.13/package/package.json written
+85 silly install resolved [ { name: 'cordova',
+85 silly install resolved     version: '5.4.1',
+85 silly install resolved     preferGlobal: 'true',
+85 silly install resolved     description: 'Cordova command line interface tool',
+85 silly install resolved     main: 'cordova',
+85 silly install resolved     engines: { node: '>=0.9.9' },
+85 silly install resolved     engineStrict: true,
+85 silly install resolved     bin: { cordova: './bin/cordova' },
+85 silly install resolved     scripts:
+85 silly install resolved      { test: 'node node_modules/jasmine-node/bin/jasmine-node --captureExceptions --color spec',
+85 silly install resolved        cover: 'node node_modules/istanbul/lib/cli.js cover --root src --print detail node_modules/jasmine-node/bin/jasmine-node -- spec' },
+85 silly install resolved     repository:
+85 silly install resolved      { type: 'git',
+85 silly install resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+85 silly install resolved     bugs:
+85 silly install resolved      { url: 'https://issues.apache.org/jira/browse/CB',
+85 silly install resolved        email: 'dev@cordova.apache.org' },
+85 silly install resolved     keywords: [ 'cordova', 'client', 'cli' ],
+85 silly install resolved     dependencies:
+85 silly install resolved      { ansi: '^0.3.0',
+85 silly install resolved        'cordova-lib': '5.4.1',
+85 silly install resolved        q: '1.0.1',
+85 silly install resolved        nopt: '3.0.1',
+85 silly install resolved        underscore: '1.7.0',
+85 silly install resolved        'update-notifier': '^0.5.0' },
+85 silly install resolved     devDependencies:
+85 silly install resolved      { istanbul: '^0.3.4',
+85 silly install resolved        grunt: '0.4.5',
+85 silly install resolved        'grunt-retire': '0.3.7',
+85 silly install resolved        'jasmine-node': '1.14.5' },
+85 silly install resolved     author: { name: 'Anis Kadri' },
+85 silly install resolved     contributors:
+85 silly install resolved      [ [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object] ],
+85 silly install resolved     license: 'Apache version 2.0',
+85 silly install resolved     _id: 'cordova@5.4.1',
+85 silly install resolved     _shasum: 'bc56bc1d3c5387a7926408212dfbce59002f9d76',
+85 silly install resolved     _resolved: 'https://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz',
+85 silly install resolved     _from: 'cordova@latest',
+85 silly install resolved     _npmVersion: '3.3.12',
+85 silly install resolved     _nodeVersion: '5.0.0',
+85 silly install resolved     _npmUser: { name: 'stevegill', email: 'stevengill97@gmail.com' },
+85 silly install resolved     dist:
+85 silly install resolved      { shasum: 'bc56bc1d3c5387a7926408212dfbce59002f9d76',
+85 silly install resolved        tarball: 'http://registry.npmjs.org/cordova/-/cordova-5.4.1.tgz' },
+85 silly install resolved     maintainers:
+85 silly install resolved      [ [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object],
+85 silly install resolved        [Object] ],
+85 silly install resolved     directories: {} },
+85 silly install resolved   { name: 'ionic',
+85 silly install resolved     version: '1.7.13',
+85 silly install resolved     preferGlobal: true,
+85 silly install resolved     description: 'A tool for creating and developing Ionic Framework mobile apps.',
+85 silly install resolved     homepage: 'http://ionicframework.com/',
+85 silly install resolved     bin: { ionic: 'bin/ionic' },
+85 silly install resolved     scripts:
+85 silly install resolved      { bump: 'node lib/tasks/bumpversion',
+85 silly install resolved        'beta-bump': 'node lib/tasks/bumpversion --level pre --identifier beta',
+85 silly install resolved        'publish-release': 'node lib/tasks/bumpversion --npmPublish',
+85 silly install resolved        'publish-tag': 'node lib/tasks/bumpversion --level beta --npmPublishTag',
+85 silly install resolved        'full-release': 'node lib/tasks/bumpversion --npmInstall --git --npmPublish',
+85 silly install resolved        test: 'npm run jasmine',
+85 silly install resolved        e2e: 'jasmine-node --captureExceptions ./e2e',
+85 silly install resolved        jasmine: 'jasmine-node --captureExceptions  ./spec' },
+85 silly install resolved     keywords:
+85 silly install resolved      [ 'ionic',
+85 silly install resolved        'ionic framework',
+85 silly install resolved        'ionicframework',
+85 silly install resolved        'mobile',
+85 silly install resolved        'app',
+85 silly install resolved        'hybrid',
+85 silly install resolved        'cordova',
+85 silly install resolved        'phonegap' ],
+85 silly install resolved     repository:
+85 silly install resolved      { type: 'git',
+85 silly install resolved        url: 'git+https://github.com/driftyco/ionic-cli.git' },
+85 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+85 silly install resolved     license: 'MIT',
+85 silly install resolved     dependencies:
+85 silly install resolved      { async: '^0.9.0',
+85 silly install resolved        cheerio: '^0.19.0',
+85 silly install resolved        'cli-table': '^0.3.1',
+85 silly install resolved        colors: '0.6.2',
+85 silly install resolved        connect: '3.1.1',
+85 silly install resolved        'connect-livereload': '0.5.2',
+85 silly install resolved        crc: '3.2.1',
+85 silly install resolved        'cross-spawn': '0.2.3',
+85 silly install resolved        'event-stream': '3.0.x',
+85 silly install resolved        'expand-tilde': '^1.2.0',
+85 silly install resolved        finalhandler: '0.2.0',
+85 silly install resolved        'form-data': '0.1.4',
+85 silly install resolved        gulp: '3.8.8',
+85 silly install resolved        'ionic-app-lib': '0.6.5',
+85 silly install resolved        moment: '^2.10.6',
+85 silly install resolved        ncp: '0.4.2',
+85 silly install resolved        npm: '2.1.3',
+85 silly install resolved        open: '0.0.5',
+85 silly install resolved        optimist: '0.6.0',
+85 silly install resolved        progress: '1.1.7',
+85 silly install resolved        prompt: '0.2.12',
+85 silly install resolved        'proxy-middleware': '^0.7.0',
+85 silly install resolved        q: '1.0.1',
+85 silly install resolved        request: '2.51.0',
+85 silly install resolved        semver: '^4.2.0',
+85 silly install resolved        'serve-static': '1.7.1',
+85 silly install resolved        shelljs: '0.2.6',
+85 silly install resolved        'tiny-lr-fork': '0.0.5',
+85 silly install resolved        underscore: '~1.7.0',
+85 silly install resolved        unzip: '0.1.9',
+85 silly install resolved        'vinyl-fs': '0.3.7',
+85 silly install resolved        xml2js: '0.4.4' },
+85 silly install resolved     devDependencies: { 'jasmine-node': '^1.14.5', rewire: '^2.3.4' },
+85 silly install resolved     gitHead: 'fec24f7eecdc02d536fc62f5eb27b93084127001',
+85 silly install resolved     bugs: { url: 'https://github.com/driftyco/ionic-cli/issues' },
+85 silly install resolved     bundleDependencies:
+85 silly install resolved      [ 'async',
+85 silly install resolved        'cheerio',
+85 silly install resolved        'cli-table',
+85 silly install resolved        'colors',
+85 silly install resolved        'connect',
+85 silly install resolved        'connect-livereload',
+85 silly install resolved        'crc',
+85 silly install resolved        'cross-spawn',
+85 silly install resolved        'event-stream',
+85 silly install resolved        'expand-tilde',
+85 silly install resolved        'finalhandler',
+85 silly install resolved        'form-data',
+85 silly install resolved        'gulp',
+85 silly install resolved        'ionic-app-lib',
+85 silly install resolved        'moment',
+85 silly install resolved        'ncp',
+85 silly install resolved        'npm',
+85 silly install resolved        'open',
+85 silly install resolved        'optimist',
+85 silly install resolved        'progress',
+85 silly install resolved        'prompt',
+85 silly install resolved        'proxy-middleware',
+85 silly install resolved        'q',
+85 silly install resolved        'request',
+85 silly install resolved        'semver',
+85 silly install resolved        'serve-static',
+85 silly install resolved        'shelljs',
+85 silly install resolved        'tiny-lr-fork',
+85 silly install resolved        'underscore',
+85 silly install resolved        'unzip',
+85 silly install resolved        'vinyl-fs',
+85 silly install resolved        'xml2js' ],
+85 silly install resolved     _id: 'ionic@1.7.13',
+85 silly install resolved     _shasum: '0a16c0aea3280acd406938d31165fc0f2d258e06',
+85 silly install resolved     _from: 'ionic@latest',
+85 silly install resolved     _npmVersion: '2.10.1',
+85 silly install resolved     _nodeVersion: '0.12.4',
+85 silly install resolved     _npmUser: { name: 'tlancina', email: 'tim@ionic.io' },
+85 silly install resolved     dist:
+85 silly install resolved      { shasum: '0a16c0aea3280acd406938d31165fc0f2d258e06',
+85 silly install resolved        tarball: 'http://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz' },
+85 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+85 silly install resolved     directories: {},
+85 silly install resolved     _resolved: 'https://registry.npmjs.org/ionic/-/ionic-1.7.13.tgz' } ]
+86 info install cordova@5.4.1 into /usr/local/lib
+87 info install ionic@1.7.13 into /usr/local/lib
+88 info installOne cordova@5.4.1
+89 verbose installOne of cordova to /usr/local/lib not in flight; installing
+90 info installOne ionic@1.7.13
+91 verbose installOne of ionic to /usr/local/lib not in flight; installing
+92 verbose makeDirectory /Users/daddy/.npm/_locks creation not in flight; initializing
+93 silly makeDirectory /Users/daddy/.npm/_locks uid: 501 gid: 20
+94 verbose makeDirectory /Users/daddy/.npm/_locks creation already in flight; waiting
+95 verbose lock using /Users/daddy/.npm/_locks/cordova-fa12e2e096426a32.lock for /usr/local/lib/node_modules/cordova
+96 silly install write writing cordova 5.4.1 to /usr/local/lib/node_modules/cordova
+97 verbose lock using /Users/daddy/.npm/_locks/ionic-61c0cd50dc7a1457.lock for /usr/local/lib/node_modules/ionic
+98 silly install write writing ionic 1.7.13 to /usr/local/lib/node_modules/ionic
+99 verbose unbuild lib/node_modules/cordova
+100 verbose unbuild lib/node_modules/ionic
+101 silly gentlyRm /usr/local/lib/node_modules/cordova is being purged from base /usr/local
+102 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cordova
+103 verbose tar unpack /Users/daddy/.npm/cordova/5.4.1/package.tgz
+104 verbose tar unpacking to /usr/local/lib/node_modules/cordova
+105 silly gentlyRm /usr/local/lib/node_modules/cordova is being purged
+106 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cordova
+107 silly gentlyRm /usr/local/lib/node_modules/ionic is being purged from base /usr/local
+108 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ionic
+109 silly gunzTarPerm modes [ '755', '644' ]
+110 verbose tar unpack /Users/daddy/.npm/ionic/1.7.13/package.tgz
+111 verbose tar unpacking to /usr/local/lib/node_modules/ionic
+112 silly gentlyRm /usr/local/lib/node_modules/ionic is being purged
+113 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ionic
+114 silly gunzTarPerm modes [ '755', '644' ]
+115 error tar.unpack untar error /Users/daddy/.npm/cordova/5.4.1/package.tgz
+116 error tar.unpack untar error /Users/daddy/.npm/ionic/1.7.13/package.tgz
+117 verbose unlock done using /Users/daddy/.npm/_locks/cordova-fa12e2e096426a32.lock for /usr/local/lib/node_modules/cordova
+118 verbose unlock done using /Users/daddy/.npm/_locks/ionic-61c0cd50dc7a1457.lock for /usr/local/lib/node_modules/ionic
+119 verbose fstream_path /usr/local/lib/node_modules/cordova
+120 verbose fstream_type Directory
+121 verbose fstream_class DirWriter
+122 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/cordova'
+122 verbose stack     at Error (native)
+123 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+123 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+123 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+124 verbose cwd /Users/daddy/Desktop/projects/ionic-artist
+125 error Darwin 15.0.0
+126 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "cordova" "ionic"
+127 error node v4.2.6
+128 error npm  v2.14.12
+129 error path /usr/local/lib/node_modules/cordova
+130 error code EACCES
+131 error errno -13
+132 error syscall mkdir
+133 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/cordova'
+133 error     at Error (native)
+133 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/cordova']
+133 error   errno: -13,
+133 error   code: 'EACCES',
+133 error   syscall: 'mkdir',
+133 error   path: '/usr/local/lib/node_modules/cordova',
+133 error   fstream_type: 'Directory',
+133 error   fstream_path: '/usr/local/lib/node_modules/cordova',
+133 error   fstream_class: 'DirWriter',
+133 error   fstream_stack:
+133 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+133 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+133 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+134 error Please try running this command again as root/Administrator.
+135 verbose exit [ -13, true ]
+136 verbose unbuild lib/node_modules/cordova
+137 silly gentlyRm /usr/local/lib/node_modules/cordova is being purged from base /usr/local
+138 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/cordova
+139 verbose unbuild lib/node_modules/ionic
+140 silly gentlyRm /usr/local/lib/node_modules/ionic is being purged from base /usr/local
+141 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/ionic
